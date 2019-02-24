@@ -33,11 +33,23 @@ public class Player implements Comparable<Player> {
     }
 
     @Override
-    public int compareTo(Player other) {
-        // Should sort accending on highscore
-        // In case the highscores are equal the last and first name should be taken into account.
-        // First sort by lastname and only take the first name into consideration if the
-        // lastnames are identical.
-        return 20;
+        public int compareTo(Player other) {
+            if (this.getHighScore() > other.getHighScore()) {
+                return 1;
+            }
+            else if(this.getHighScore() < other.getHighScore()){
+                return -1;
+            }
+            else{
+                if(this.getLastName() != other.getLastName()){
+                    return this.getLastName().compareTo(other.getLastName());
+
+                } else{
+                    return this.getFirstName().compareTo(other.getFirstName());
+                }
+
+            }
+
+        }
+
     }
-}

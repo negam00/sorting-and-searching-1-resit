@@ -25,7 +25,7 @@ public class ArraySort {
         while (k <= l) {
 
             while (array[k].compareTo(pivot) == -1){
-                k--;
+                k++;
             }
 
             while (array[l].compareTo(pivot) == 1){
