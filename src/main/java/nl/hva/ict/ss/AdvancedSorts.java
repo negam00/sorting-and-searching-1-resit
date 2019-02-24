@@ -1,9 +1,14 @@
 package nl.hva.ict.ss;
 
+import nl.hva.ict.ss.util.ArraySort;
+import nl.hva.ict.ss.util.LinkedListSort;
+
 import java.util.LinkedList;
 
 public class AdvancedSorts {
 
+    private static ArraySort arraySort =  new ArraySort();
+    private static LinkedListSort linkedListSort =  new LinkedListSort();
     /**
      * Implement quicksort using LinkedList only! Usage of anything but LinkedList will result in failing the assignment!
      * @param unsorted
