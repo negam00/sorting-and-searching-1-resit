@@ -38,6 +38,6 @@ public class Player implements Comparable<Player> {
         // In case the highscores are equal the last and first name should be taken into account.
         // First sort by lastname and only take the first name into consideration if the
         // lastnames are identical.
-        return 0;
+        return 20;
     }
 }
