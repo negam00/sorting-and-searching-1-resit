@@ -1,6 +1,5 @@
-package nl.hva.ict.ss.util;
+package nl.hva.ict.ss;
 
-import nl.hva.ict.ss.Player;
 
 import java.util.Comparator;
 
