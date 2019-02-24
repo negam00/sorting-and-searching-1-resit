@@ -1,5 +1,8 @@
 package nl.hva.ict.ss;
 
+import java.util.Collection;
+import java.util.Collections;
+
 /**
  * Player keeps track of the name and the highscore for a player.
  * Once created the name can't be changed. The best score for this player
@@ -34,10 +37,6 @@ public class Player implements Comparable<Player> {
 
     @Override
     public int compareTo(Player other) {
-        // Should sort accending on highscore
-        // In case the highscores are equal the last and first name should be taken into account.
-        // First sort by lastname and only take the first name into consideration if the
-        // lastnames are identical.
-        return 20;
+
     }
 }
