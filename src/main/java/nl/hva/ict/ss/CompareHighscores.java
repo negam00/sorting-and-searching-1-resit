@@ -14,10 +14,11 @@ public abstract class CompareHighscores implements Comparator<Player> {
             return -1;
         }
         else{
-            if(p1.getFirstName() != p2.getFirstName()){
-                return p1.getFirstName().compareTo(p2.getFirstName());
-            } else{
+            if(p1.getLastName() != p2.getLastName()){
                 return p1.getLastName().compareTo(p2.getLastName());
+
+            } else{
+                return p1.getFirstName().compareTo(p2.getFirstName());
             }
 
         }
