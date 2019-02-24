@@ -15,8 +15,9 @@ public class AdvancedSorts {
      * @param <E>
      * @return
      */
-    public static <E extends Comparable<E>> LinkedList<E> quickSort(LinkedList<E> unsorted) {
-        return unsorted;
+    public static <E extends Comparable<E>> LinkedList<E> quickSort(LinkedList<E> unsorted)
+    {
+        return linkedListSort.LinkedListSorted(unsorted);
     }
 
     /**
@@ -26,7 +27,7 @@ public class AdvancedSorts {
      * @return
      */
     public static <E extends Comparable<E>> E[] quickSort(E[] unsorted) {
-        return unsorted;
+        return arraySort.sortArray(unsorted);
     }
 
 }
