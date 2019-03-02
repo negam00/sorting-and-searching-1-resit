@@ -28,18 +28,19 @@ public class LinkedListSort {
                     }
 
                 }
+            lowBound = LinkedListSorted(lowBound);
+            while (0 != lowBound.size()){
+                LinkedListReturn.add(lowBound.pollFirst());
+            }
 
-                // TODO: 2/24/2019  als dit een error veroorzaakt moet dit en lowbound gebeuren geswapt worden.
+            LinkedListReturn.add(pivot);
+
             highBound = LinkedListSorted(highBound);
             while (0 < highBound.size()){
                 LinkedListReturn.add(highBound.pollFirst());
 
             }
-            lowBound = LinkedListSorted(lowBound);
-            while (0 != lowBound.size()){
-                LinkedListReturn.add(lowBound.pollFirst());
-            }
-            LinkedListReturn.add(pivot);
+
 
             return LinkedListReturn;
 
